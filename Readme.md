@@ -8,7 +8,7 @@ Git é  um sistema de versionamento de arquivos, auxilia o trabalho em equipe e 
 - Remote: https://www.atlassian.com/br/git/tutorials/syncing
 
 
-Comandos
+- Comandos
 
 
 git --version: para ver a versão instalada, caso não tenha baixe do site git conforme OS.
@@ -26,7 +26,7 @@ pull: puxa o repositório para sua maquina
 git status: mostra informações de commit, mudanças, caso em verde quer dizer que esta no state pronto pro commit
 
 
-Testes:
+- Testes:
 
 
 Criar repositorio no github com nome ProjetoGit, de modo publico sem adicionar outro readme.md, ao fazer isso é exibido comandos basicos do git, e o link do repositorio https://github.com/FeAranha/ProjetoGit.git
@@ -55,7 +55,7 @@ git push -u origin main
 Necessário login e senha do github. Ao atualizar a pagina do github podemos ver o primeiro commit.
 
 
-Versionamento
+- Versionamento
 
 
 Ao longo do video ocorreram alterações nos textos, e algumas correções de escrita, agora para revisar o estudo criar um novo commit:
@@ -76,7 +76,41 @@ git push origin main
 ps: eu esqueci de salvar o vsCode logo fiz um terceiro commit.
 
 
+- Alterando e adicionando arquivos
+
+Criar arquivo ProjetoDeFato.md contendo: Projetinho vai ser desenvolvido aqui
+
+Refazer o processo:
+
+git add Readme.md
+git add ProjetoDeFato.md
+git status
+
+git commit -m "Titulo do commit"
+git push origin main
+
+
+Caso for para todos arquivos utilizar git add .
+
+No github ao clicar no Titulo, neste exemplo "Testes, e Versionamento", podemos ver o histórico de mudanças e adicionar comentários, porem só mostra de um commit anterior para o commit atual.
+
+
+- Branch
+
+Para uma nova função no projeto, ou alteração, feature etc, antes é necessario cria-la com o comando no exemplo Novo Botão:
+
+git checkout -b "novo-botão"
+
+Ao fazer isso agora tudo que for desenvolvido será realizado na Branch novo-botão.
+
+clear
+git status
+git add Readme.md ProjetoDeFato.md
+git status
+
+git commit -m "Branch"
+git push origin main
 
 🙏
-Creditos: Rafaella Ballerini
+- Creditos: Rafaella Ballerini
 Video Aula: https://www.youtube.com/watch?v=UBAX-13g8OM
