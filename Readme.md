@@ -65,7 +65,9 @@ ps: Caso executar git add . é enviado todos arquivos alterados para o state, ca
 comando clear para limpar a tela, sempre ajuda.
 
 clear
+
 git add Readme.md
+
 git status
 
 conforme status somente modifica-ra Readme.md
@@ -101,15 +103,13 @@ Para uma nova função no projeto, ou alteração, feature etc, antes é necessa
 
 git checkout -b "novo-botão"
 
-Ao fazer isso agora tudo que for desenvolvido será realizado na Branch novo-botão.
+Ao fazer isso agora tudo que for desenvolvido será realizado na Branch novo-botão. Como exemplo foi criado o arquivo new-button contendo New Button, apos alterações executar git add nomeArquivo.extencao. O push agora precisa ser em origin new-button:
 
-clear
-git status
-git add Readme.md ProjetoDeFato.md
-git status
+git push origin new-button
 
-git commit -m "Branch"
-git push origin main
+COm isso atualizando a pagina github, podemos ver a main ainda sem o button e as branches, um é new-button com o arquivo criado e seu texto. Contem uma mensagem informando que esta branch esta a frente da main.
+
+
 
 🙏
 - Creditos: Rafaella Ballerini
