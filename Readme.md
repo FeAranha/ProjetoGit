@@ -84,8 +84,7 @@ Criar arquivo ProjetoDeFato.md contendo: Projetinho vai ser desenvolvido aqui
 
 Refazer o processo:
 
-git add Readme.md
-git add ProjetoDeFato.md
+git add Readme.md ProjetoDeFato.md
 git status
 
 git commit -m "Titulo do commit"
@@ -107,7 +106,26 @@ Ao fazer isso agora tudo que for desenvolvido será realizado na Branch novo-bot
 
 git push origin new-button
 
-COm isso atualizando a pagina github, podemos ver a main ainda sem o button e as branches, um é new-button com o arquivo criado e seu texto. Contem uma mensagem informando que esta branch esta a frente da main.
+Com isso atualizando a pagina github, podemos ver a main ainda sem o button e as branches, um é new-button com o arquivo criado e seu texto. Contem uma mensagem informando que esta branch esta a frente da main.
+
+- Alteração entre Branch
+
+É comum mudarmos de Branch e fazer alterações e voltar e mudar e ir e etc, se atentar aos commits o stash apaga alterações e afeta seu projeto fora do github, para mudar de branch execute:
+
+git checkout main
+
+Ou git checkout new-button para voltar.
+
+
+- git merge
+
+Para fazer a junção do desenvolvimento é utilizado o comando merge, para isso é necessario estar na branch main e executar:
+
+git merge new-button
+git push origin main
+
+
+- git clone
 
 
 
