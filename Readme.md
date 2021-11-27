@@ -127,7 +127,13 @@ git push origin main
 
 - git clone
 
+Pode ser usado como uma forma de gerar backup, ou copiar o repositório de alguem. Acessar a pasta desejada e executar git clone com a url do repositório:
 
+
+git clone https://github.com/rafaballerini/GitTutorial.git
+
+
+lembre de favoritar os repositórios que gostou.
 
 🙏
 - Creditos: Rafaella Ballerini
