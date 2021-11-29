@@ -1,4 +1,5 @@
-    Olá esse projeto mostras alguns conceitos e funcionalidades do git.
+    Olá esse projeto mostras alguns conceitos e funcionalidades do git, este readme.md foi feito para colocar em pratica os conceitos abordado pela Rafaella Ballerini.
+    
 
 Git é  um sistema de versionamento de arquivos, auxilia o trabalho em equipe e solo. Ele trabalha com repositorios, são como pastas. Github é uma galeria de códigos, uma rede social de desenvolvedores.
 
@@ -8,7 +9,7 @@ Git é  um sistema de versionamento de arquivos, auxilia o trabalho em equipe e 
 - Remote: https://www.atlassian.com/br/git/tutorials/syncing
 
 
-- Comandos
+## Comandos
 
 
 git --version: para ver a versão instalada, caso não tenha baixe do site git conforme OS.
@@ -26,7 +27,7 @@ pull: puxa o repositório para sua maquina
 git status: mostra informações de commit, mudanças, caso em verde quer dizer que esta no state pronto pro commit
 
 
-- Testes:
+## Testes:
 
 
 Criar repositorio no github com nome ProjetoGit, de modo publico sem adicionar outro readme.md, ao fazer isso é exibido comandos basicos do git, e o link do repositorio https://github.com/FeAranha/ProjetoGit.git
@@ -55,7 +56,7 @@ git push -u origin main
 Necessário login e senha do github. Ao atualizar a pagina do github podemos ver o primeiro commit.
 
 
-- Versionamento
+## Versionamento
 
 
 Ao longo do video ocorreram alterações nos textos, e algumas correções de escrita, agora para revisar o estudo criar um novo commit:
@@ -78,7 +79,7 @@ git push origin main
 ps: eu esqueci de salvar o vsCode logo fiz um terceiro commit.
 
 
-- Alterando e adicionando arquivos
+## Alterando e adicionando arquivos
 
 Criar arquivo ProjetoDeFato.md contendo: Projetinho vai ser desenvolvido aqui
 
@@ -96,7 +97,7 @@ Caso for para todos arquivos utilizar git add .
 No github ao clicar no Titulo, neste exemplo "Testes, e Versionamento", podemos ver o histórico de mudanças e adicionar comentários, porem só mostra de um commit anterior para o commit atual.
 
 
-- Branch
+## Branch
 
 Para uma nova função no projeto, ou alteração, feature etc, antes é necessario cria-la com o comando no exemplo Novo Botão:
 
@@ -108,7 +109,7 @@ git push origin new-button
 
 Com isso atualizando a pagina github, podemos ver a main ainda sem o button e as branches, um é new-button com o arquivo criado e seu texto. Contem uma mensagem informando que esta branch esta a frente da main.
 
-- Alteração entre Branch
+## Alteração entre Branch
 
 É comum mudarmos de Branch e fazer alterações e voltar e mudar e ir e etc, se atentar aos commits o stash apaga alterações e afeta seu projeto fora do github, para mudar de branch execute:
 
@@ -117,7 +118,7 @@ git checkout main
 Ou git checkout new-button para voltar.
 
 
-- git merge
+## git merge
 
 Para fazer a junção do desenvolvimento é utilizado o comando merge, para isso é necessario estar na branch main e executar:
 
@@ -125,7 +126,7 @@ git merge new-button
 git push origin main
 
 
-- git clone
+## git clone
 
 Pode ser usado como uma forma de gerar backup, ou copiar o repositório de alguem. Acessar a pasta desejada e executar git clone com a url do repositório:
 
@@ -134,6 +135,22 @@ git clone https://github.com/rafaballerini/GitTutorial.git
 
 
 lembre de favoritar os repositórios que gostou.
+
+
+## git pull
+
+Puxa as alterações no repositorio em questão.
+
+
+## Fork
+
+Copia o repositorio para seu repositorio.
+
+
+## Pull Request
+
+Ao realizar um fork de um repositório podemos desenvolver e tentar ajudar a pessoa que disponibilizou publicamente seu repositório fazendo um pull request.
+
 
 🙏
 - Creditos: Rafaella Ballerini
