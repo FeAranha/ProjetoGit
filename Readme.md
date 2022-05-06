@@ -45,6 +45,10 @@ Após renomear para main o git exige executar o comando remote apontando para ur
 
 git remote add origin https://github.com/FeAranha/ProjetoGit.git
 
+ou
+
+git remote set-url origin git@github.com:ppreyer/first_app.git
+
 Nenhuma mensagem é exibida.
 
 O comando git indica seu uso, remote faz conexão local com origin github repositorio.
