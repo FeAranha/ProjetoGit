@@ -39,6 +39,7 @@ git commit -m "Titulo do commit"
 Ao digitar no terminal git commit -m "Primeiro commit" é realizado o commit, e se executar git status avisa que não possui commits.
 
 Uma boa pratica é alterar o nome da branch para main:
+
 git branch -M "main"
 
 Após renomear para main o git exige executar o comando remote apontando para url padrão:
@@ -78,6 +79,7 @@ git status
 conforme status somente modifica-ra Readme.md
 
 git commit -m "Testes e Versionamento"
+
 git push origin main
 
 ps: eu esqueci de salvar o vsCode logo fiz um terceiro commit.
@@ -90,9 +92,11 @@ Criar arquivo ProjetoDeFato.md contendo: Projetinho vai ser desenvolvido aqui
 Refazer o processo:
 
 git add Readme.md ProjetoDeFato.md
+
 git status
 
 git commit -m "Titulo do commit"
+
 git push origin main
 
 
@@ -127,6 +131,7 @@ Ou git checkout new-button para voltar.
 Para fazer a junção do desenvolvimento é utilizado o comando merge, para isso é necessario estar na branch main e executar:
 
 git merge new-button
+
 git push origin main
 
 
