@@ -136,11 +136,17 @@ git merge new-button
 git push origin main
 
 Para atualizar a branch paralela com dados da principal é necessário estar sem alterações na branch paralela em questão e executar:
+
 git branch //para listar e ver a branch selecionada
+
 git checkout branchPrincipal // alterar para branch com atualização ou em produção para depois puxar(pull)
+
 git pull //puxar alterações
+
 git -b "newBranch" //cria uma nova branch
+
 git push origin newBranch //joga as alterações na branch nova
+
 git diff branchPrincial..newBranch //ver as diferenças entre as branchs
 
 
