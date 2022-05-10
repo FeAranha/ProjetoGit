@@ -128,11 +128,20 @@ Ou git checkout new-button para voltar.
 
 ## git merge
 
-Para fazer a junção do desenvolvimento é utilizado o comando merge, para isso é necessario estar na branch main e executar:
+Para fazer a junção do desenvolvimento é utilizado o comando merge, para puxar as alterações da branch principal(main) é necessario estar nela e executar:
 
+git checkout main //(caso esteja em outra branch) 
 git merge new-button
 
 git push origin main
+
+Para atualizar a branch paralela com dados da principal é necessário estar sem alterações na branch paralela em questão e executar:
+git branch //para listar e ver a branch selecionada
+git checkout branchPrincipal // alterar para branch com atualização ou em produção para depois puxar(pull)
+git pull //puxar alterações
+git -b "newBranch" //cria uma nova branch
+git push origin newBranch //joga as alterações na branch nova
+git diff branchPrincial..newBranch //ver as diferenças entre as branchs
 
 
 ## git clone
