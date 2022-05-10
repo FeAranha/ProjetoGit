@@ -135,7 +135,7 @@ git merge new-button
 
 git push origin main
 
-Para atualizar a branch paralela com dados da principal é necessário estar sem alterações na branch paralela em questão e executar:
+### Para atualizar a branch paralela com dados da principal é necessário estar sem alterações na branch paralela em questão e executar:
 
 git branch //para listar e ver a branch selecionada
 
