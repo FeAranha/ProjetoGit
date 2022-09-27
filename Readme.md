@@ -130,7 +130,8 @@ Ou git checkout new-button para voltar.
 
 Para fazer a junção do desenvolvimento é utilizado o comando merge, para puxar as alterações da branch principal(main) é necessario estar nela e executar:
 
-git checkout main //(caso esteja em outra branch) 
+git checkout main //(caso esteja em outra branch)
+
 git merge new-button
 
 git push origin main
