@@ -180,3 +180,17 @@ Ao realizar um fork de um repositório podemos desenvolver e tentar ajudar a pes
 🙏
 - Creditos: Rafaella Ballerini
 Video Aula: https://www.youtube.com/watch?v=UBAX-13g8OM
+
+# Extra
+
+Rank of Devs:
+
+```
+alias rank3="sort | uniq -c | sort -nr | head -n 3"
+git log --format=%an | rank3
+    44 fearanha
+    10 maria
+    10 jose
+```
+ Pode ser criado outros alias rank10 por exemplo e para listar os 10 mudar o -n 3 para -n 10
+
