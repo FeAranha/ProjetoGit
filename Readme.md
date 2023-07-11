@@ -182,7 +182,6 @@ Ao realizar um fork de um repositório podemos desenvolver e tentar ajudar a pes
 Video Aula: https://www.youtube.com/watch?v=UBAX-13g8OM
 
 # Extra
-
 Rank of Devs:
 
 ```
@@ -193,4 +192,17 @@ git log --format=%an | rank3
     10 jose
 ```
  Pode ser criado outros alias rank10 por exemplo e para listar os 10 mudar o -n 3 para -n 10
+
+# Create repo terminal:
+
+- Configurar as variáveis de ambiente GITHUB_USERNAME e GITHUB_TOKEN no arquivo .zshrc e executar source .zshrc para carregar as variáveis de ambiente.
+- Navegar até a pasta do seu projeto usando o comando cd.
+- Executar git init para inicializar um repositório local.
+- Criar o repositório no GitHub usando o comando curl -u $GITHUB_USERNAME:$GITHUB_TOKEN https://api.github.com/user/repos -d '{"name":"< reponame >"}'. Substitua < reponame > pelo nome desejado para o seu repositório.
+- Ao criar copiar o 'html_url' gerado, no ex.: https://github.com/FeAranha/01-fundamentos-nodejs para usar no remmote depois
+- Executar git add . para adicionar todos os arquivos do seu projeto ao controle de versão.
+- Executar git commit -m "start" para fazer um commit inicial.
+- Executar git branch -M main para renomear o branch principal para main (ou outro nome de sua preferência).
+- Executar git remote add origin <repository-url> para adicionar o repositório remoto do GitHub. Substitua <repository-url> pela URL do repositório que você criou no passo 4.
+- Executar git push -u origin main para enviar seus commits locais para o repositório remoto no GitHub.
 
